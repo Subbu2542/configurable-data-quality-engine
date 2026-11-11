@@ -1,0 +1,15 @@
+dataset_name,rejection_reason,rejected_records
+customers,Customer ID uniqueness; Email uniqueness,2
+customers,Customer name completeness,1
+customers,Email completeness,1
+order_items,Order item ID uniqueness,2
+order_items,Order reference integrity,1
+order_items,Product reference integrity,1
+order_items,Quantity range,2
+orders,Customer reference integrity,2
+orders,Order ID uniqueness,2
+orders,Order status validity,1
+orders,Order total range,1
+products,Product name completeness,1
+products,Product price range,1
+products,SKU uniqueness,2

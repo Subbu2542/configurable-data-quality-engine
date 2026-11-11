@@ -1,0 +1,252 @@
+{
+    "input_directory": "data\\large_input",
+    "datasets": {
+        "customers": {
+            "input_records": 10000,
+            "accepted_records": 10000,
+            "rejected_records": 0,
+            "reconciliation_passed": true,
+            "rules_executed": 5,
+            "rule_failures": 0,
+            "validation_results": [
+                {
+                    "rule_id": "21fec5be-7847-42de-bdf2-90d791fbdca5",
+                    "rule_name": "Customer ID completeness",
+                    "rule_type": "COMPLETENESS",
+                    "column_name": "customer_id",
+                    "severity": "ERROR",
+                    "total_records": 10000,
+                    "passed_records": 10000,
+                    "failed_records": 0,
+                    "status": "PASS"
+                },
+                {
+                    "rule_id": "61b6170d-4de4-407d-92b5-9a7e24f81675",
+                    "rule_name": "Customer ID uniqueness",
+                    "rule_type": "UNIQUENESS",
+                    "column_name": "customer_id",
+                    "severity": "ERROR",
+                    "total_records": 10000,
+                    "passed_records": 10000,
+                    "failed_records": 0,
+                    "status": "PASS"
+                },
+                {
+                    "rule_id": "0a4f4f69-c75f-4d1e-9623-c8430891a83f",
+                    "rule_name": "Customer name completeness",
+                    "rule_type": "COMPLETENESS",
+                    "column_name": "customer_name",
+                    "severity": "ERROR",
+                    "total_records": 10000,
+                    "passed_records": 10000,
+                    "failed_records": 0,
+                    "status": "PASS"
+                },
+                {
+                    "rule_id": "d21067aa-f5d1-46db-8501-e9d513352596",
+                    "rule_name": "Email completeness",
+                    "rule_type": "COMPLETENESS",
+                    "column_name": "email",
+                    "severity": "ERROR",
+                    "total_records": 10000,
+                    "passed_records": 10000,
+                    "failed_records": 0,
+                    "status": "PASS"
+                },
+                {
+                    "rule_id": "73b8e1bb-163e-4521-a1e4-bdf2bc91540c",
+                    "rule_name": "Email uniqueness",
+                    "rule_type": "UNIQUENESS",
+                    "column_name": "email",
+                    "severity": "ERROR",
+                    "total_records": 10000,
+                    "passed_records": 10000,
+                    "failed_records": 0,
+                    "status": "PASS"
+                }
+            ],
+            "accepted_file": "data\\processed\\large_input\\customers_accepted.csv",
+            "rejected_file": "data\\quarantine\\large_input\\customers_rejected.csv"
+        },
+        "products": {
+            "input_records": 5000,
+            "accepted_records": 5000,
+            "rejected_records": 0,
+            "reconciliation_passed": true,
+            "rules_executed": 4,
+            "rule_failures": 0,
+            "validation_results": [
+                {
+                    "rule_id": "d7479535-d2a1-4acd-a3d6-26f121ba4350",
+                    "rule_name": "Product ID uniqueness",
+                    "rule_type": "UNIQUENESS",
+                    "column_name": "product_id",
+                    "severity": "ERROR",
+                    "total_records": 5000,
+                    "passed_records": 5000,
+                    "failed_records": 0,
+                    "status": "PASS"
+                },
+                {
+                    "rule_id": "97ff021a-317f-4d6f-a450-ed878dfc275f",
+                    "rule_name": "Product name completeness",
+                    "rule_type": "COMPLETENESS",
+                    "column_name": "product_name",
+                    "severity": "ERROR",
+                    "total_records": 5000,
+                    "passed_records": 5000,
+                    "failed_records": 0,
+                    "status": "PASS"
+                },
+                {
+                    "rule_id": "6f9580a9-bc64-46df-a110-23ba3e6b5437",
+                    "rule_name": "Product price range",
+                    "rule_type": "RANGE",
+                    "column_name": "price",
+                    "severity": "ERROR",
+                    "total_records": 5000,
+                    "passed_records": 5000,
+                    "failed_records": 0,
+                    "status": "PASS"
+                },
+                {
+                    "rule_id": "a067433d-7202-4e33-9129-3c7c292e0cd9",
+                    "rule_name": "SKU uniqueness",
+                    "rule_type": "UNIQUENESS",
+                    "column_name": "sku",
+                    "severity": "ERROR",
+                    "total_records": 5000,
+                    "passed_records": 5000,
+                    "failed_records": 0,
+                    "status": "PASS"
+                }
+            ],
+            "accepted_file": "data\\processed\\large_input\\products_accepted.csv",
+            "rejected_file": "data\\quarantine\\large_input\\products_rejected.csv"
+        },
+        "orders": {
+            "input_records": 50000,
+            "accepted_records": 50000,
+            "rejected_records": 0,
+            "reconciliation_passed": true,
+            "rules_executed": 4,
+            "rule_failures": 0,
+            "validation_results": [
+                {
+                    "rule_id": "4d4cff86-e46a-417e-a314-59e5cc53eb33",
+                    "rule_name": "Customer reference integrity",
+                    "rule_type": "REFERENTIAL_INTEGRITY",
+                    "column_name": "customer_id",
+                    "severity": "ERROR",
+                    "total_records": 50000,
+                    "passed_records": 50000,
+                    "failed_records": 0,
+                    "status": "PASS"
+                },
+                {
+                    "rule_id": "213503b3-9b6d-432e-9513-87572a86161e",
+                    "rule_name": "Order ID uniqueness",
+                    "rule_type": "UNIQUENESS",
+                    "column_name": "order_id",
+                    "severity": "ERROR",
+                    "total_records": 50000,
+                    "passed_records": 50000,
+                    "failed_records": 0,
+                    "status": "PASS"
+                },
+                {
+                    "rule_id": "17df3a60-7a1d-4c16-bff9-49696235f03b",
+                    "rule_name": "Order status validity",
+                    "rule_type": "VALUE_CHECK",
+                    "column_name": "order_status",
+                    "severity": "ERROR",
+                    "total_records": 50000,
+                    "passed_records": 50000,
+                    "failed_records": 0,
+                    "status": "PASS"
+                },
+                {
+                    "rule_id": "e2e9bbbe-d6d3-48d4-b87b-2c09315d7225",
+                    "rule_name": "Order total range",
+                    "rule_type": "RANGE",
+                    "column_name": "total_amount",
+                    "severity": "ERROR",
+                    "total_records": 50000,
+                    "passed_records": 50000,
+                    "failed_records": 0,
+                    "status": "PASS"
+                }
+            ],
+            "accepted_file": "data\\processed\\large_input\\orders_accepted.csv",
+            "rejected_file": "data\\quarantine\\large_input\\orders_rejected.csv"
+        },
+        "order_items": {
+            "input_records": 125166,
+            "accepted_records": 125166,
+            "rejected_records": 0,
+            "reconciliation_passed": true,
+            "rules_executed": 4,
+            "rule_failures": 0,
+            "validation_results": [
+                {
+                    "rule_id": "a4e7c43e-ce13-49d5-8501-572e68b636e6",
+                    "rule_name": "Order item ID uniqueness",
+                    "rule_type": "UNIQUENESS",
+                    "column_name": "order_item_id",
+                    "severity": "ERROR",
+                    "total_records": 125166,
+                    "passed_records": 125166,
+                    "failed_records": 0,
+                    "status": "PASS"
+                },
+                {
+                    "rule_id": "67f920ae-853f-4151-a271-81a192d1b262",
+                    "rule_name": "Order reference integrity",
+                    "rule_type": "REFERENTIAL_INTEGRITY",
+                    "column_name": "order_id",
+                    "severity": "ERROR",
+                    "total_records": 125166,
+                    "passed_records": 125166,
+                    "failed_records": 0,
+                    "status": "PASS"
+                },
+                {
+                    "rule_id": "1e63c6c4-4ffe-47f6-8f87-4aad80c506c7",
+                    "rule_name": "Product reference integrity",
+                    "rule_type": "REFERENTIAL_INTEGRITY",
+                    "column_name": "product_id",
+                    "severity": "ERROR",
+                    "total_records": 125166,
+                    "passed_records": 125166,
+                    "failed_records": 0,
+                    "status": "PASS"
+                },
+                {
+                    "rule_id": "f8770ab8-4898-48c4-a707-bd8b5826963e",
+                    "rule_name": "Quantity range",
+                    "rule_type": "RANGE",
+                    "column_name": "quantity",
+                    "severity": "ERROR",
+                    "total_records": 125166,
+                    "passed_records": 125166,
+                    "failed_records": 0,
+                    "status": "PASS"
+                }
+            ],
+            "accepted_file": "data\\processed\\large_input\\order_items_accepted.csv",
+            "rejected_file": "data\\quarantine\\large_input\\order_items_rejected.csv"
+        }
+    },
+    "total_input": 190166,
+    "total_accepted": 190166,
+    "total_rejected": 0,
+    "order_total_reconciliation": {
+        "orders_checked": 50000,
+        "orders_reconciled": 50000,
+        "orders_mismatched": 0,
+        "maximum_absolute_difference": 0.0,
+        "report_file": "reports\\large_order_total_reconciliation.csv"
+    },
+    "overall_reconciliation_passed": true,
+    "generated_output_records": 190166
+}

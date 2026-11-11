@@ -1,0 +1,31 @@
+dataset_name,fixture_row,scenario,expected_outcome,description
+customers,1,normal_customer,ACCEPT,Normal customer record
+customers,2,duplicate_customer_id_original,REJECT,First occurrence of duplicated customer ID
+customers,3,duplicate_customer_id_copy,REJECT,Duplicate customer ID record
+customers,4,missing_email,REJECT,Mandatory email is missing
+customers,5,missing_customer_name,REJECT,Mandatory customer name is missing
+products,1,normal_product,ACCEPT,Normal product record
+products,2,minimum_positive_price,ACCEPT,Minimum positive price boundary
+products,3,maximum_generated_price,ACCEPT,Upper boundary of the generator price range
+products,4,duplicate_sku_original,REJECT,First occurrence of duplicated SKU
+products,5,duplicate_sku_copy,REJECT,Second occurrence of duplicated SKU
+products,6,missing_product_name,REJECT,Mandatory product name is missing
+products,7,negative_price,REJECT,Product price is below the permitted range
+orders,1,normal_order,ACCEPT,Normal order with an existing customer reference
+orders,2,duplicate_order_id_original,REJECT,First occurrence of duplicated order ID
+orders,3,duplicate_order_id_copy,REJECT,Duplicate order ID record
+orders,4,missing_customer_reference,REJECT,Customer reference is missing
+orders,5,invalid_customer_reference,REJECT,Customer ID does not exist
+orders,6,invalid_order_status,REJECT,Order status is not an allowed value
+orders,7,negative_order_total,REJECT,Order total is negative
+orders,8,zero_order_total_boundary,ACCEPT,Zero total boundary for range validation
+orders,9,newer_order_event,ACCEPT,Newer business event arrives first
+orders,10,late_arriving_out_of_order_order,ACCEPT,Older business event arrives after a newer event
+order_items,1,normal_order_item,ACCEPT,Normal item with valid order and product references
+order_items,2,minimum_quantity_boundary,ACCEPT,Minimum permitted positive quantity
+order_items,3,duplicate_item_id_original,REJECT,First occurrence of duplicated item ID
+order_items,4,duplicate_item_id_copy,REJECT,Duplicate order item ID
+order_items,5,missing_quantity,REJECT,Quantity is missing
+order_items,6,zero_quantity,REJECT,Quantity is below the permitted minimum
+order_items,7,invalid_order_reference,REJECT,Referenced order does not exist
+order_items,8,invalid_product_reference,REJECT,Referenced product does not exist

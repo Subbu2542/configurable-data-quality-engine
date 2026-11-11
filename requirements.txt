@@ -1,0 +1,12 @@
+
+fastapi
+uvicorn[standard]
+streamlit
+pandas
+sqlalchemy
+psycopg2-binary
+pydantic
+python-multipart
+pytest
+httpx
+python-dotenv

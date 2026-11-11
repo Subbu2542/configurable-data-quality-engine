@@ -1,0 +1,6 @@
+customer_id,customer_name,email,phone,city,created_at,updated_at
+900001,Priya Kumar,normal.edge.customer@example.com,9395310485,Bengaluru,2023-12-03 00:00:00+00:00,2023-12-10 00:00:00+00:00
+1,Priya Kumar,priya.kumar1@example.com,9395310485,Bengaluru,2023-12-03 00:00:00+00:00,2023-12-10 00:00:00+00:00
+1,Priya Kumar,priya.kumar1@example.com,9395310485,Bengaluru,2023-12-03 00:00:00+00:00,2023-12-10 00:00:00+00:00
+2,Kiran Reddy,,9895285932,Visakhapatnam,2024-02-08 00:00:00+00:00,2024-02-10 00:00:00+00:00
+3,,vijay.gupta3@example.com,9131994523,Hyderabad,2025-11-29 00:00:00+00:00,2025-12-05 00:00:00+00:00
